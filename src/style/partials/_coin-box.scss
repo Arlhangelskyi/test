@@ -1,0 +1,161 @@
+.coin-block {
+  .flex-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .coin-item {
+      width: 100%;
+      max-width: 308px;
+      height: 354px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      padding: 21px 36px 21px 24px;
+      box-sizing: border-box;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(../img/corner.png);
+        width: 100%;
+        height: 158px;
+        z-index: 10;
+      }
+
+      .coin-img {
+        position: absolute;
+        left: 50%;
+        margin-left: -148px;
+        top: 0;
+
+        img {
+          max-width: 100%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      &.ethereum {
+        background-image: url(../img/ethe-bg.png);
+
+        .coin-img {
+          margin-left: 0;
+          left: auto;
+          max-width: none;
+          right: -9px;
+        }
+      }
+      &.litecoin {
+        background-color: #333333;
+        background-image: url(../img/buck-center.png);
+
+        .coin-img {
+          margin-left: -153px;
+        }
+      }
+      &.bitcoin {
+        background-color: #301103;
+        background-image: url(../img/buck-gold.png);
+
+        .coin-img {
+          margin-left: -139px;
+        }
+      }
+
+      .coin-title {
+        color: #fff;
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        z-index: 99;
+        margin-bottom: 147px;
+      }
+
+      .coin-price {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+
+      .coin-change {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+
+        .coin-change-title {
+          color: rgba(255, 255, 255, .2);
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 16px;
+        }
+        .coin-change-percent {
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 700;
+          display: none;
+
+          div {
+            display: inline-block;
+          }
+
+          &.green {
+            color: #70c446;
+          }
+          &.red {
+            color: #c80e24;
+          }
+        }
+        .coin-change-money {
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 700;
+
+          div {
+            display: inline-block;
+          }
+
+          &.green {
+            color: #70c446;
+          }
+          &.red {
+            color: #c80e24;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .flex-box {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .coin-item {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 1114px) and (min-width: 641px) {
+    .flex-box {
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .coin-item {
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

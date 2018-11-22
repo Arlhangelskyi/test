@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exchange</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css?v=1">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="header-box">
+            <span class="select-text">Select currency to exhange:</span>
+            <select name="currency" id="currency-select">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="rub">RUB</option>
+                <option value="gpb">GPB</option>
+            </select>
+        </div>
+    </div>
+    <div class="coin-block">
+        <div class="flex-box">
+            <div class="flex-item coin-item ethereum">
+                <div class="coin-title">Ethereum</div>
+                <div class="coin-img"><img src="img/ethe.png" alt=""></div>
+                <div class="coin-price">
+                    <div class="coin-price-title">Price:</div>
+                    <div class="price-value"><span id="eth">22526.92</span></div>
+                </div>
+                <div class="coin-percent">
+                    <div class="coin-percent-title">Percent change</div>
+                    <div class="coin-checkbox">
+                        <input type="checkbox" class="checkbox" data-checkbox="1" id="checkbox" />
+                        <label for="checkbox"></label>
+                    </div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title">Hour change</div>
+                    <div class="coin-change-percent change-color percent-1"><div class="coin-val" id="ethPercH">+266</div>%</div>
+                    <div class="coin-change-money change-color money-1"><div class="coin-val" id="ethMoneyH">+26</div>$</div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title ">Day change</div>
+                    <div class="coin-change-percent change-color percent-1"><div class="coin-val" id="ethPercD">+266</div>%</div>
+                    <div class="coin-change-money change-color money-1"><div class="coin-val" id="ethMoneyD">+26</div>$</div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title">Week change</div>
+                    <div class="coin-change-percent change-color percent-1"><div class="coin-val" id="ethPercW">-266</div>%</div>
+                    <div class="coin-change-money change-color money-1"><div class="coin-val" id="ethMoneyW">-26</div>$</div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title">Month change</div>
+                    <div class="coin-change-percent change-color percent-1"><div class="coin-val" id="ethPercM">+266</div>%</div>
+                    <div class="coin-change-money change-color money-1"><div class="coin-val" id="ethMoneyM">+26</div>$</div>
+                </div>
+            </div>
+            <div class="flex-item coin-item litecoin">
+                <div class="coin-title">Litecoin</div>
+                <div class="coin-img"><img src="img/lite.png" alt=""></div>
+                <div class="coin-price">
+                    <div class="coin-price-title">Price:</div>
+                    <div class="price-value"><span id="lit">22526.92</span></div>
+                </div>
+                <div class="coin-percent">
+                    <div class="coin-percent-title">Percent change</div>
+                    <div class="coin-checkbox">
+                        <input type="checkbox" class="checkbox" data-checkbox="2" id="checkbox2" />
+                        <label for="checkbox2"></label>
+                    </div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title">Hour change</div>
+                    <div class="coin-change-percent change-color percent-2"><div class="coin-val" id="litPercH">+266</div>%</div>
+                    <div class="coin-change-money change-color money-2"><div class="coin-val" id="litMoneyH">+26</div>$</div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title ">Day change</div>
+                    <div class="coin-change-percent change-color percent-2"><div class="coin-val" id="litPercD">+266</div>%</div>
+                    <div class="coin-change-money change-color money-2"><div class="coin-val" id="litMoneyD">+26</div>$</div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title">Week change</div>
+                    <div class="coin-change-percent change-color percent-2"><div class="coin-val" id="litPercW">-266</div>%</div>
+                    <div class="coin-change-money change-color money-2"><div class="coin-val" id="litMoneyW">-26</div>$</div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title">Month change</div>
+                    <div class="coin-change-percent change-color percent-2"><div class="coin-val" id="litPercM">+266</div>%</div>
+                    <div class="coin-change-money change-color money-2"><div class="coin-val" id="litMoneyM">+26</div>$</div>
+                </div>
+            </div>
+            <div class="flex-item coin-item bitcoin">
+                <div class="coin-title">Bitcoin</div>
+                <div class="coin-img"><img src="img/bit.png" alt=""></div>
+                <div class="coin-price">
+                    <div class="coin-price-title">Price:</div>
+                    <div class="price-value"><span id="bit">22526.92</span></div>
+                </div>
+                <div class="coin-percent">
+                    <div class="coin-percent-title">Percent change</div>
+                    <div class="coin-checkbox">
+                        <input type="checkbox" class="checkbox" data-checkbox="3" id="checkbox3" />
+                        <label for="checkbox3"></label>
+                    </div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title">Hour change</div>
+                    <div class="coin-change-percent change-color percent-3"><div class="coin-val" id="bitPercH">+266</div>%</div>
+                    <div class="coin-change-money change-color money-3"><div class="coin-val" id="bitMoneyH">+26</div>$</div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title ">Day change</div>
+                    <div class="coin-change-percent change-color percent-3"><div class="coin-val" id="bitPercD">+266</div>%</div>
+                    <div class="coin-change-money change-color money-3"><div class="coin-val" id="bitMoneyD">+26</div>$</div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title">Week change</div>
+                    <div class="coin-change-percent change-color percent-3"><div class="coin-val" id="bitPercW">-266</div>%</div>
+                    <div class="coin-change-money change-color money-3"><div class="coin-val" id="bitMoneyW">-26</div>$</div>
+                </div>
+                <div class="coin-change">
+                    <div class="coin-change-title">Month change</div>
+                    <div class="coin-change-percent change-color percent-3"><div class="coin-val" id="bitPercM">+266</div>%</div>
+                    <div class="coin-change-money change-color money-3"><div class="coin-val" id="bitMoneyM">+26</div>$</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

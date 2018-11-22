@@ -1,0 +1,43 @@
+.header {
+  padding: 70px 0 52px;
+
+  .header-box {
+    width: 100%;
+    padding: 22px 23px 21px 0px;
+    background: rgba(252, 252, 252, .02);
+    border: 1px solid rgba(148, 232, 254, .1);
+    border-radius: 6px;
+    text-align: center;
+    box-sizing: border-box;
+
+    .select-text {
+      font-size: 32px;
+      line-height: 55px;
+      font-weight: 500;
+      color: #fff;
+      display: inline-block;
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 15px 0 30px;
+
+    .header-box {
+      padding: 15px;
+
+      .select-text {
+        font-size: 22px;
+        line-height: 26px;
+        display: block;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 1114px) and (min-width: 641px) {
+    .select-text {
+      font-size: 28px;
+    }
+  }
+}

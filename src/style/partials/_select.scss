@@ -1,0 +1,98 @@
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  width: 297px;
+  height: 55px;
+  float: right;
+  box-sizing: border-box;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  border: 1px solid #92e8fe;
+  padding: 0 15px;
+  transition: all .3s;
+  text-align: left;
+  line-height: 53px;
+  border-radius: 4px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    display: block;
+    height: 10px;
+    top: 50%;
+    margin-top: -6px;
+    right: 13px;
+    background: url(../img/arrow.svg) center no-repeat;
+    background-size: 100%;
+    transition: all .3s;
+  }
+  &:hover {
+
+  }
+  &:active, &.active {
+    &:after {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: calc(100% + 9px);
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 10px 17px;
+  list-style: none;
+  border: 1px solid #92e8fe;
+  border-radius: 4px;
+  text-align: left;
+  background: #101E27;
+  li {
+    margin: 0;
+    line-height: 16px;
+    padding: 6px 0;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .select {
+    display: block;
+    width: 100%;
+    max-width: 290px;
+    height: 40px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .select-styled {
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1114px) and (min-width: 641px) {
+  .select {
+    width: 100%;
+    max-width: 26%;
+  }
+}

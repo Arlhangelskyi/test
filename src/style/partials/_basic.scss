@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  min-height: 100vh;
+  background-image: url('../img/bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  background-size:cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 984px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
